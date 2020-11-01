@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -61,6 +65,7 @@ h1 {
   margin-top: 0;
   position: relative;
   transform: scale(1);
+  font-size: 27px;
 }
 
 .container.grow {
@@ -103,16 +108,23 @@ h1 {
 .pointer-container {
   position: absolute;
   top: -40px;
-  left: 140px;
-  width: 20px;
+  left: 135px;
+  width: 30px;
   height: 190px;
   transform-origin: bottom center;
+}
+
+.pointer-container.rotate {
   animation: rotate 7.5s linear forwards infinite;
 }
 
 .pointer {
-  background-color: #000;
+  background-color: #010f1c;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+footer p{
+  text-align: end;
 }
